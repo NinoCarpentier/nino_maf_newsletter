@@ -1,16 +1,176 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter Nino et MAF</title>
-</head>
-<body>
-    <h1>Bienvenue à la Newsletter de Nino et MAF</h1>
-    <p>Restez informé des dernières nouvelles et mises à jour de Nino et MAF en vous abonnant à notre newsletter.</p>
-    <form action="subscribe.php" method="post">
-        <label for="email">Entrez votre adresse e-mail :</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <input type="submit" value="S'abonner">
-    </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Mes aventures avec la MAF</title>
+  </head>
+  <body>
+    <nav>
+      <h3>Nino Carpentier</h3>
+      <div class="nav-links">
+        <a href="#qui-suis-je">Qui suis-je ?</a>
+        <a href="#mission-aviation-fellowship">Mission Aviation Fellowship</a>
+        <a href="#mon-projet">Mon projet</a>
+        <a href="#newsletter">Newsletter</a>
+      </div>
+    </nav>
+    <header>
+      <h1>Mes aventures avec la MAF</h1>
+    </header>
+    <section id="qui-suis-je">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Je m'appelle Nino Carpentier et j'ai 17 ans. Je suis passionné
+        d'aviation et je souhaiterais servir Dieu au travers des communautés les
+        plus pauvres de la Terre. En mars 2025, j'ai découvert l'ONG chrétienne
+        Mission Aviation Fellowship (MAF). Je me suis très vite dit que devenir
+        pilote pour cette mission serait l'accomplissement de mon rêve.
+      </p>
+      <img src="./images/cessna_caravan-Photoroom.png" alt="Cessna Caravan" />
+    </section>
+    <section id="mission-aviation-fellowship">
+      <h2>Mission Aviation Fellowship</h2>
+      <p>
+        La vision de la MAF est de voir les communautés les plus isolées de
+        notre planète changées par l'amour de Jésus-Christ. Sa mission est
+        d'apporter aide, espoir et guérison à ces communautés au moyen de
+        l'aviation.<br />
+        La MAF utilise environ 120 avions qui sont principalement des Cessna
+        Caravan, mais aussi des Cessna 206, des GA8 Airvan, des Kodiak 100 et un
+        Pilatus PC-12 (le plus beau et le plus performant selon moi). Elle opère
+        dans 25 pays disséminés en Amérique du Sud, en Afrique, en Asie du
+        Sud-Est et en Océanie, comme l'Équateur, le Lesotho, l'Ouganda, la
+        Papouasie-Nouvelle Guinée, le Timor Leste ou encore la terre d'Arnhem en
+        Australie.<br />
+        1400 pilotes, mécaniciens aéronautiques, chefs de programme,
+        gestionnaires, personnels au sol et bien d'autres sont engagés au
+        service de ceux qui ne pourraient pas être atteints autrement que par
+        les airs. La MAF est partenaire de plus de 1500 organisations
+        missionnaires, de développement et de soins. Elle leur épargne, ainsi
+        qu'aux communautés, des heures, des jours et parfois même des semaines
+        de marche à travers la brousse ou de trajet sur des routes en très
+        mauvais état. Les nombreuses évacuations médicales effectuées par les
+        pilotes sauvent chaque jour des vies dans des pays où l'accès aux soins
+        est difficile, voire inexistant. Les avions de la MAF transportent des
+        missionnaires, des pasteurs, du personnel de santé, des traducteurs,
+        mais aussi des denrées alimentaires et des Bibles.<br />
+        En résumé, Mission Aviation Fellowship fait quotidiennement la
+        différence entre la vie et la mort pour ces communautés du bout du
+        monde, dont nous ignorons ou oublions souvent l'existence.
+      </p>
+      <img src="./images/pilatus_pc12-Photoroom.png" alt="Pilatus PC-12" />
+    </section>
+    <section id="mon-projet" class="project">
+      <h2>Mon projet</h2>
+      <p>
+        Revenons-en à présent à mon projet. Pour devenir pilote de la MAF, il me
+        faudra suivre une formation théorique et pratique dont la durée moyenne
+        est de deux ans. Cela ne se fera pas avant quelques années car le coût
+        de la formation est élevé.<br />
+        Cependant, je me suis vu offrir une place pour un week-end de découverte
+        de l'un des centres de formation des pilotes de la MAF, MATC (Mission
+        Aviation Training Centre), aux Pays-Bas. Ce voyage me permettra de
+        découvrir le centre, de participer à une leçon de pilotage, d'effectuer
+        un vol sur simulateur, de faire des ateliers de mécanique aéronautique,
+        d'échanger avec les différents instructeurs, avec les élèves pilotes,
+        ainsi qu'avec des jeunes qui partagent ma passion. En bref, j'aurai
+        l'occasion d'en découvrir plus sur ce qui est attendu d'un pilote et
+        également sur la vie de missionnaire.<br />
+        Le Vision Trip aura lieu à la mi-juillet. Pour pouvoir le payer, je dois
+        atteindre un montant de 350£ de dons, soit environ 410€, avant le 30
+        juin. Je fais donc appel à votre générosité. Vous vous demandez
+        certainement pourquoi il est demandé que je mène cette petite campagne
+        de dons. En fait, les missionnaires qui travaillent pour la MAF doivent,
+        avant de pouvoir partir sur le terrain, se constituer une équipe de
+        partenaires, financiers mais aussi de prière. La levée de fonds me
+        permet donc de me préparer à ce qui m'attend en tant que futur pilote
+        missionnaire.
+      </p>
+      <button
+        onclick="window.location.href = 'https://gofund.me/f7433cbe0'"
+        class="donate"
+      >
+        Faire un don
+      </button>
+    </section>
+    <section id="newsletter" class="newsletter">
+      <p>
+        Pour suivre mes aventures et soutenir mon projet, vous pouvez vous
+        abonner à ma newsletter.
+      </p>
+      <form
+        action="javascript:void(0);"
+        method="post"
+        onsubmit="handleSubmit(event)"
+        id="subscription-form"
+        class="form-container"
+      >
+        <div class="name">
+          <input type="text" id="name" name="name" placeholder="Prénom" />
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Nom"
+          />
+        </div>
+        <div class="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <button id="submit" type="submit" class="submit">S'abonner</button>
+      </form>
+      <div id="success-message" style="display: none" class="form-container">
+        <p>Merci pour votre abonnement !</p>
+      </div>
+      <div id="error-message" style="display: none" class="form-container">
+        <p>Une erreur est survenue. Veuillez réessayer.</p>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright © 2026 Nino Carpentier. Tous droits réservés.</p>
+    </footer>
+    <script>
+      async function handleSubmit(event) {
+        try {
+          event.preventDefault();
+          const email = document.getElementById("email").value;
+          const name = document.getElementById("name").value;
+          const lastName = document.getElementById("last_name").value;
+
+          const body = new URLSearchParams();
+          body.append("email", email);
+          body.append("name", name);
+          body.append("last_name", lastName);
+          const SCRIPT_URL =
+            "https://script.google.com/macros/s/AKfycbwSiXUScR0fiseVYNR8bPN9WGBBW5WFvppYdC9f3FJsA5E2FmI47erwWkuKk12YAIDO/exec";
+          document.getElementById("submit").textContent = "En attente...";
+          document.getElementById("submit").disabled = true;
+          document.getElementById("name").disabled = true;
+          document.getElementById("last_name").disabled = true;
+          document.getElementById("email").disabled = true;
+
+          await fetch(SCRIPT_URL, { method: "POST", body });
+          console.log("success");
+          document.getElementById("subscription-form").remove();
+          document.getElementById("success-message").style.display = "block";
+        } catch (error) {
+          console.error("Error:", error);
+          document.getElementById("submit").textContent = "S'abonner";
+          document.getElementById("submit").disabled = false;
+          document.getElementById("name").disabled = false;
+          document.getElementById("last_name").disabled = false;
+          document.getElementById("email").disabled = false;
+          document.getElementById("error-message").style.display = "block";
+        }
+      }
+    </script>
+  </body>
 </html>
