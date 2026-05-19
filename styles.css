@@ -24,11 +24,14 @@ nav h3 {
   font-weight: 500;
 }
 
+nav a {
+  font-size: 18px;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   color: black;
-  font-size: 18px;
-  padding: 10px;
 }
 
 a:hover {
@@ -68,6 +71,16 @@ img {
   object-fit: contain;
   margin: 20px 0;
   box-sizing: border-box;
+}
+
+figcaption {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+figcaption a {
+  font-size: 14px;
 }
 
 .project {

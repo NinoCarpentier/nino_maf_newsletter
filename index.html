@@ -11,9 +11,9 @@
       <h3>Nino Carpentier</h3>
       <div class="nav-links">
         <a href="#qui-suis-je">Qui suis-je ?</a>
+        <a href="#newsletter">Newsletter</a>
         <a href="#mission-aviation-fellowship">Mission Aviation Fellowship</a>
         <a href="#mon-projet">Mon projet</a>
-        <a href="#newsletter">Newsletter</a>
       </div>
     </nav>
     <header>
@@ -33,6 +33,45 @@
         Cessna 208B Grand Caravan. Source :
         <a href="https://www.jetphotos.com/photo/12050557">JetPhotos</a>
       </figcaption>
+    </section>
+    <section id="newsletter" class="newsletter">
+      <p>
+        Pour suivre mes aventures avec la MAF et soutenir mon projet, vous
+        pouvez vous abonner à ma newsletter.
+      </p>
+      <form
+        action="javascript:void(0);"
+        method="post"
+        onsubmit="handleSubmit(event)"
+        id="subscription-form"
+        class="form-container"
+      >
+        <div class="name">
+          <input type="text" id="name" name="name" placeholder="Prénom" />
+          <input
+            type="text"
+            id="last_name"
+            name="last_name"
+            placeholder="Nom"
+          />
+        </div>
+        <div class="email">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <button id="submit" type="submit" class="submit">S'abonner</button>
+      </form>
+      <div id="success-message" style="display: none" class="form-container">
+        <p>Merci pour votre abonnement !</p>
+      </div>
+      <div id="error-message" style="display: none" class="form-container">
+        <p>Une erreur est survenue. Veuillez réessayer.</p>
+      </div>
     </section>
     <section id="mission-aviation-fellowship">
       <h2>Mission Aviation Fellowship</h2>
@@ -102,45 +141,6 @@
       >
         Faire un don
       </button>
-    </section>
-    <section id="newsletter" class="newsletter">
-      <p>
-        Pour suivre mes aventures et soutenir mon projet, vous pouvez vous
-        abonner à ma newsletter.
-      </p>
-      <form
-        action="javascript:void(0);"
-        method="post"
-        onsubmit="handleSubmit(event)"
-        id="subscription-form"
-        class="form-container"
-      >
-        <div class="name">
-          <input type="text" id="name" name="name" placeholder="Prénom" />
-          <input
-            type="text"
-            id="last_name"
-            name="last_name"
-            placeholder="Nom"
-          />
-        </div>
-        <div class="email">
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-          />
-        </div>
-        <button id="submit" type="submit" class="submit">S'abonner</button>
-      </form>
-      <div id="success-message" style="display: none" class="form-container">
-        <p>Merci pour votre abonnement !</p>
-      </div>
-      <div id="error-message" style="display: none" class="form-container">
-        <p>Une erreur est survenue. Veuillez réessayer.</p>
-      </div>
     </section>
     <footer>
       <p>Copyright © 2026 Nino Carpentier. Tous droits réservés.</p>
